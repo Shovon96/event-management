@@ -1,5 +1,5 @@
-import Banner from "./Banner";
-import Services from "./Services";
+import Banner from "../../components/Banner/Banner";
+import Services from "../../components/Services/Services";
 
 const Home = () => {
     return (
