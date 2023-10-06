@@ -5,13 +5,13 @@ const Navbar = () => {
     const navLinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/features'>Features</NavLink></li>
-        <li><NavLink to='/servises'>Servises</NavLink></li>
+        <li><NavLink to='/servises'>Services</NavLink></li>
         <li><NavLink to='/project'>Our Project</NavLink></li>
     </>
 
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 py-4">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/HTZnQ4d/istockphoto-1127706701-1024x1024.jpg",
+        "title": "Wedding",
+        "description": "Join us in celebrating the joyous union of John and Jane as they exchange vows and begin their journey together as a married couple. The ceremony will be held in a beautiful garden setting, surrounded by love and the company of family and friends. After the ceremony, there will be a reception with delicious food, lively music, and dancing. Your presence is the greatest gift, but if you wish to give a token of your well wishes, a card or a donation to our favorite charity would be appreciated. We look forward to sharing this special day with you!"
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/zJncPFr/istockphoto-1362974189-1024x1024.jpg",
+        "title": "Birthday Parties",
+        "description": "Celebrate the joyous occasion of a birthday with our unforgettable birthday party! Immerse yourself in a vibrant atmosphere filled with laughter, delicious treats, and lively decorations. Our carefully curated themes and decorations add a touch of magic to the celebration, creating lasting memories for everyone. Indulge in scrumptious cakes, delightful snacks, and a range of activities that cater to all ages. Our dedicated team ensures a seamless experience, leaving you free to savor every moment. Join us in making birthdays extraordinary, filled with love, surprises, and the warmth of shared happiness. Let's turn another year older into an unforgettable celebration!"
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/MhkkPhS/istockphoto-1064683172-1024x1024.jpg",
+        "title": "Anniversaries",
+        "description": "Celebrate the milestone of love and commitment with our enchanting anniversary event. Immerse yourselves in a romantic ambiance adorned with elegant decor, creating the perfect backdrop for cherished memories. Indulge in a delightful culinary experience, with a specially curated menu that reflects the flavors of your journey together. Our attentive staff ensures a seamless celebration, allowing you to focus on the joy of togetherness. Toast to the years of shared laughter, challenges overcome, and the enduring strength of your bond. Join us as we mark another year of love and partnership, surrounded by the warmth of family and friends. Make your anniversary an unforgettable chapter in the story of your everlasting love."
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/mDLDnnm/istockphoto-1425791369-1024x1024.jpg",
+        "title": "Engagement Parties",
+        "description": "Embark on the journey of a lifetime with our exquisite engagement celebration. Step into an enchanting atmosphere, adorned with tasteful decor that mirrors the elegance of your commitment. Indulge in a culinary experience crafted to perfection, reflecting the uniqueness of your love story. Our attentive team ensures every detail is seamless, allowing you to savor the anticipation of this significant moment. Toast to the promise of forever with family and friends, as you create memories that will last a lifetime. Let us be a part of this joyous occasion, where love takes center stage, and your future together begins with a flourish of celebration. Congratulations on your engagement!"
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/qgMyq4S/istockphoto-943038216-1024x1024.jpg",
+        "title": "Retirement Parties",
+        "description": "Celebrate a career well-spent and a future of leisure with our distinguished retirement event. Embrace the ambiance of accomplishment as we honor years of hard work and dedication. Revel in the company of colleagues, friends, and family as we reflect on the achievements and memories of a fulfilling professional journey. Indulge in gourmet delights and toast to the retiree's well-deserved relaxation and new adventures. Our thoughtful arrangements ensure a seamless transition into the next chapter of life, marked by relaxation and newfound freedom. Join us in bidding farewell to the working days and welcoming the exciting possibilities that retirement brings. Here's to the retiree—a lifetime of achievements and a future filled with joy!"
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/wc1qTWD/istockphoto-1466720977-1024x1024.jpg",
+        "title": "Baby shower",
+        "description": "Celebrate the upcoming arrival of a bundle of joy with our enchanting baby shower event! Immerse yourself in a whimsical setting adorned with adorable decorations, creating a warm and inviting atmosphere for family and friends. Indulge in delightful treats and a variety of refreshments as we shower the expectant parents with love and good wishes. Engage in fun games and activities designed to celebrate this special milestone. Our dedicated team ensures every detail is attended to, allowing the parents-to-be to bask in the joy of anticipation. Join us in creating lasting memories and welcoming the newest member of the family in a celebration filled with laughter, love, and heartfelt moments. Congratulations to the growing family!"
+    }
+]
