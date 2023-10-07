@@ -3,6 +3,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import auth from "../../firebaseConfig/firebase.config";
 import { useState } from "react";
 import { FaEye, FaEyeSlash  } from 'react-icons/fa';
+import { toast } from "react-toastify";
 
 const Register = () => {
 
@@ -26,7 +27,8 @@ const Register = () => {
             setRegError('PassWord should be at least 6 charecter or longer')
             return;
         }
-        else if (!/^(?=.*[A-Z])(?=.*\d).{6,}$/.test(password)) {
+        // !/^(?=.*[A-Z])(?=.*\d).{6,}$/
+        else if (!/^(?=.*[A-Z])(?=.*[!@#\$%\^&\*])(?=.{6,})/.test(password)) {
             setRegError('Password should used must be at least one uppercase charecter and one number added')
             return;
         }
@@ -35,8 +37,17 @@ const Register = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(() => {
                 setRegSuccess('User Created Successfully..')
+                toast.success("User Created Success !", {
+                    position: toast.POSITION.TOP_CENTER
+                  })
+                e.target.reset()
             })
-            .catch(error => setRegError(error?.message))
+            .catch(error => {
+                toast.error(error.message, {
+                    position: toast.POSITION.TOP_CENTER
+                  })
+                setRegError(error?.message)
+            })
     }
 
 
@@ -94,7 +105,7 @@ const Register = () => {
 
                         {/* Sign In Button */}
                         <button type="submit" className="w-full bg-fuchsia-700 text-white text-lg font-semibold p-2 rounded-md hover:bg-fuchsia-600 focus:outline-none focus:shadow-outline-blue">
-                            Sign In
+                            Sign Up
                         </button>
 
                         {/* success message set in form */}

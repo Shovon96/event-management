@@ -11,13 +11,13 @@ const Navbar = () => {
     const handleLogOut = () => {
         logOut()
             .then(() => {
-                toast.success("Success Notification !", {
+                toast.success("LogOut Success!", {
                     position: toast.POSITION.TOP_CENTER
                 });
             })
-            .catch(() => {
-                toast.error("Error Notification !", {
-                    position: toast.POSITION.TOP_LEFT
+            .catch(error => {
+                toast.error(error.message, {
+                    position: toast.POSITION.TOP_CENTER
                 });
 
             })
@@ -32,7 +32,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="navbar bg-base-100 py-4">
+        <div className="navbar bg-base-100 py-2">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -42,7 +42,8 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <p className="text-4xl font-extrabold">Cri<span className="text-fuchsia-600">A</span>tive</p>
+                {/* <p className="text-4xl font-extrabold">Cri<span className="text-fuchsia-600">A</span>tive</p> */}
+                <img className="w-44 h-20" src="https://i.ibb.co/nQGVrmg/images.jpg" alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-3 font-bold text-base">

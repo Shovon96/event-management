@@ -3,7 +3,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebaseConfig/firebase.config";
 import { useContext, useState } from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-toastify";
 
@@ -31,10 +31,16 @@ const Login = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then(() => {
                 setLoginSuccess('User Login Successfully')
+                toast.success("Login Success !", {
+                    position: toast.POSITION.TOP_CENTER
+                })
                 navigate(location?.state ? location.state : '/')
                 e.target.reset()
             })
             .catch(error => {
+                toast.error(error.message, {
+                    position: toast.POSITION.TOP_CENTER
+                })
                 setLoginError(error.message)
             })
     }
@@ -42,15 +48,16 @@ const Login = () => {
     const handleGoogleSignIn = () => {
         signInWithGoogle()
             .then(() => {
-                toast.success("Success Notification !", {
+                navigate(location?.state ? location.state : '/')
+                toast.success("Login Success !", {
                     position: toast.POSITION.TOP_CENTER
-                  });
+                });
             })
-            .catch(() => {
-                toast.error("Error Notification !", {
-                    position: toast.POSITION.TOP_LEFT
-                  });
-            
+            .catch(error => {
+                toast.error(error.message, {
+                    position: toast.POSITION.TOP_CENTER
+                });
+
             })
     }
 
@@ -94,6 +101,12 @@ const Login = () => {
                         <button type="submit" className="w-full bg-fuchsia-700 text-white text-lg font-semibold p-2 rounded-md hover:bg-fuchsia-600 focus:outline-none focus:shadow-outline-blue">
                             Sign In
                         </button>
+                    </form>
+
+                        <div className="flex justify-between mt-3">
+                            <button className="btn px-8 font-bold" onClick={handleGoogleSignIn}><FaGoogle className="text-red-500 text-lg"></FaGoogle>Google</button>
+                            <button className="btn px-8 font-bold"><FaGithub className="text-lg"></FaGithub>GitHub</button>
+                        </div>
 
 
                         {/* success message set in form */}
@@ -107,12 +120,6 @@ const Login = () => {
                         }
                         <p className="mt-4">You do not have an account? Go <Link to='/registetion' className="text-red-600 underline text-lg font-bold">SignUp</Link></p>
 
-                    </form>
-
-                    <div className="flex justify-between mt-3">
-                        <button className="btn" onClick={handleGoogleSignIn}>Google</button>
-                        <button className="btn">GitHub</button>
-                    </div>
                 </div>
             </div>
         </div>

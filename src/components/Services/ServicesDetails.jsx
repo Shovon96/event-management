@@ -7,7 +7,7 @@ const ServicesDetails = () => {
     const [services, setServices] = useState()
 
     const { id } = useParams()
-    console.log(id);
+    // console.log(id);
 
     useEffect(() => {
         fetch('/services.json')
@@ -25,7 +25,7 @@ const ServicesDetails = () => {
             <img className="h-[70vh] w-full rounded-md" src={services?.img} alt="" />
             <div className="flex justify-around my-5 items-center">
                 <h3 className="text-4xl font-bold">{services?.title}</h3>
-                <span className="px-16 py-4 rounded-lg font-bold text-black text-lg bg-fuchsia-300 hover:bg-fuchsia-500">{services?.price}</span>
+                <span className="px-16 py-3 rounded-lg font-bold text-white text-lg bg-fuchsia-500">{services?.price}</span>
             </div>
             <p>{services?.description}</p>
             <div className="flex justify-center my-3">
