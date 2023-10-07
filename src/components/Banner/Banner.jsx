@@ -4,7 +4,7 @@ const Banner = () => {
         <div>
             <div className="carousel w-full h-[90vh] relative">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/K5TR1kL/bannar1.jpg" className="w-full" />
+                    <img src="https://i.ibb.co/qgR5N6R/bannar3.jpg" className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" className="btn btn-circle btn-sm">❮</a>
                         <a href="#slide2" className="btn btn-circle btn-sm">❯</a>
@@ -18,7 +18,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/qgR5N6R/bannar3.jpg" className="w-full" />
+                    <img src="https://i.ibb.co/K5TR1kL/bannar1.jpg" className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" className="btn btn-circle btn-sm">❮</a>
                         <a href="#slide1" className="btn btn-circle btn-sm">❯</a>

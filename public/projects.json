@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/yFsFqPk/istockphoto-471906412-1024x1024.jpg",
+        "title": "John and Jane's Wedding",
+        "venue": "Enchanted Garden Estate",
+        "photographer_name": "Grace Henry",
+        "short_des": "Celebrate the union of John and Jane in a magical garden setting."
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/MCnB4Nq/istockphoto-1433371568-1024x1024.jpg",
+        "title": "Sophie's 30th Birthday Bash",
+        "venue": "City View Lounge",
+        "photographer_name": "SnapHappy Studios",
+        "short_des": "Join us for a night of fun, laughter, and celebration as Sophie turns 30!"
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/djVkV79/istockphoto-842793174-1024x1024.jpg",
+        "title": "Mark and Emily's 10th Anniversary",
+        "venue": "Seaside Villa",
+        "photographer_name": "Everlasting Memories",
+        "short_des": "A decade of love and Join us celebrate Mark and Emily's 10th anniversary."
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/PMJLQMg/istockphoto-1346443455-1024x1024.jpg",
+        "title": "Graduation Gala Celebration 2023",
+        "venue": "University Events Center",
+        "photographer_name": "Cap and Gown",
+        "short_des": "The achievements of the graduating class of 2023 in a night of glamour."
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/tXbM1YV/istockphoto-1176952541-1024x1024.jpg",
+        "title": "Joy's Baby Shower",
+        "venue": "Whimsical Baby Boutique",
+        "photographer_name": "Tiny Toes",
+        "short_des": "A sweet celebration as we welcome a new bundle of joy into our lives!"
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/9n6wWph/istockphoto-1150477610-1024x1024.jpg",
+        "title": "Farewell Retirement",
+        "venue": "Grand Ballroom",
+        "photographer_name": "Timeless Moments",
+        "short_des": "Join us in bidding farewell to a legend as they embark on a new chapter of life."
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/JRpS7t1/istockphoto-1179405499-1024x1024.webp",
+        "title": "Annual Holiday",
+        "venue": "Winter Wonderland Resort",
+        "photographer_name": "Festive Frames",
+        "short_des": "Embrace the holiday spirit with joy, merriment, and a touch of magic!"
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/7WJp4H5/istockphoto-599887432-1024x1024.jpg",
+        "title": "Sarah's Surprise Soiree",
+        "venue": "Secret Garden Cafe",
+        "photographer_name": "Hidden Lens",
+        "short_des": "Help us surprise Sarah with an unforgettable evening filled with love and laughter."
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co/ysRMBv7/istockphoto-1036013660-1024x1024.jpg",
+        "title": "Bon Voyage, Alex!",
+        "venue": "Sailing Away Yacht Club",
+        "photographer_name": "Adventure Awaits",
+        "short_des": "Wishing Alex smooth seas and fair winds as they set sail on a new adventure."
+    },
+    {
+        "id": 10,
+        "img": "https://i.ibb.co/q9tHRsv/istockphoto-1171736068-1024x1024.jpg",
+        "title": "Wedding Celebration",
+        "venue": "City Auditorium",
+        "photographer_name": "Dream Capture Studio",
+        "short_des": "Cheers to the graduates! Join us in celebrating their accomplishments and aspirations."
+    },
+    {
+        "id": 11,
+        "img": "https://i.ibb.co/cCHsPzQ/istockphoto-1309237361-1024x1024.jpg",
+        "title": "Anniversary Party",
+        "venue": "Neon Nights Club",
+        "photographer_name": "Flashback",
+        "short_des": "Get ready to dance and groove as we transport ourselves back to the raddest decade ever!"
+    },
+    {
+        "id": 12,
+        "img": "https://i.ibb.co/ZB01nDN/istockphoto-484570312-1024x1024.jpg",
+        "title": "Elegant Garden Tea Party",
+        "venue": "Rosewood Manor Gardens",
+        "photographer_name": "Timeless Elegance",
+        "short_des": "Indulge in an afternoon of sophistication and charm at our elegant garden tea party."
+    }
+]
