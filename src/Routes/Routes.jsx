@@ -5,6 +5,8 @@ import Home from "../Pages/Home/Home";
 import ServicesDetails from "../components/Services/ServicesDetails";
 import Features from "../Pages/Features/Features";
 import OurProjects from "../Pages/Projects/OurProjects";
+import Login from "../Pages/Login-Registation/Login";
+import Register from "../Pages/Login-Registation/Register";
 
 
 const router = createBrowserRouter([
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
                 path: '/project',
                 loader: () => fetch('/projects.json'),
                 element: <OurProjects></OurProjects>
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/registetion',
+                element: <Register></Register>
             }
         ]
     },
