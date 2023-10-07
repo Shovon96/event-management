@@ -20,8 +20,8 @@ console.log(greetign);
 
 #### Answer: A: `{}`
 
-<i>Write your explanation here</i>
-greeting is a empty object, greeting has no value set. so the answer is A.
+<i>greeting is a empty object, greeting has no value set. so the answer is A.</i>
+
 </p>
 </details>
 
@@ -45,8 +45,8 @@ sum(1, "2");
 
 #### Answer: C: `"12"`
 
-<i>Write your explanation here</i>
-The function have two parametes and this function parameters return as addition. when this function are called then passing two value in arguments. The arguments are one number and one string. When a number and a string are adding then the arguments are concating.
+<i>The function have two parametes and this function parameters return as addition. when this function are called then passing two value in arguments. The arguments are one number and one string. When a number and a string are adding then the arguments are concating.</i>
+
 </p>
 </details>
 
@@ -71,8 +71,8 @@ console.log(food);
 
 #### Answer: A: `["🍕", "🍫", "🥑", "🍔"]`
 
-<i>Write your explanation here</i>
-The food have four property. And info is a object. when i went console.log is food, so the correct answer is "A".
+<i>Write your explanation The food have four property. And info is a object. when i went console.log is food, so the correct answer is "A".</i>
+
 </p>
 </details>
 
@@ -96,8 +96,8 @@ console.log(sayHi());
 
 #### Answer: B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
-The sayHi function have one parameter, and this function return a string and the parameter. When this function are called this function no passing arguments. if any arguments are not passing when the parameter value is undefined. So, this function return a string and undefined
+<i>The sayHi function have one parameter, and this function return a string and the parameter. When this function are called this function no passing arguments. if any arguments are not passing when the parameter value is undefined. So, this function return a string and undefined.</i>
+
 </p>
 </details>
 
@@ -124,7 +124,7 @@ console.log(count);
 
 #### Answer: C: `3`
 
-<i>Write your explanation here</i>
-At fast count =0.And nums have four value. When the loop runs through the array then the value of count one by one increements. But the increements are up in the condition, so last value not encrement. That's why the ans is "C".
+<i>At fast count =0.And nums have four value. When the loop runs through the array then the value of count one by one increements. But the increements are up in the condition, so last value not encrement. That's why the ans is "C".</i>
+
 </p>
 </details>
