@@ -1,6 +1,27 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Navbar = () => {
+
+    const { user, logOut } = useContext(AuthContext)
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                toast.success("Success Notification !", {
+                    position: toast.POSITION.TOP_CENTER
+                });
+            })
+            .catch(() => {
+                toast.error("Error Notification !", {
+                    position: toast.POSITION.TOP_LEFT
+                });
+
+            })
+    }
 
     const navLinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
@@ -29,9 +50,17 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button>
-                    <NavLink to='/login' className='bg-fuchsia-600 text-white font-bold px-6 py-3 rounded-md'>Login</NavLink>
-                </button>
+                {
+                    user ? <>
+                        <span className="text-red-500 mr-3">{user?.email}</span>
+                        <button onClick={handleLogOut} className='bg-fuchsia-600 text-white font-bold px-6 py-3 rounded-md'>Sign Out</button>
+                    </>
+                        :
+                        <button>
+                            <NavLink to='/login' className='bg-fuchsia-600 text-white font-bold px-6 py-3 rounded-md'>SignIn</NavLink>
+                        </button>
+                }
+
             </div>
         </div>
     );

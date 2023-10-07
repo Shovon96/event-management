@@ -7,6 +7,7 @@ import Features from "../Pages/Features/Features";
 import OurProjects from "../Pages/Projects/OurProjects";
 import Login from "../Pages/Login-Registation/Login";
 import Register from "../Pages/Login-Registation/Register";
+import PrivetRoutes from "./PrivetRoutes";
 
 
 const router = createBrowserRouter([
@@ -22,16 +23,16 @@ const router = createBrowserRouter([
             },
             {
                 path: '/services/:id',
-                element: <ServicesDetails></ServicesDetails>
+                element: <PrivetRoutes><ServicesDetails></ServicesDetails></PrivetRoutes>
             },
             {
                 path: '/features',
-                element: <Features></Features>
+                element: <PrivetRoutes><Features></Features></PrivetRoutes>
             },
             {
                 path: '/project',
                 loader: () => fetch('/projects.json'),
-                element: <OurProjects></OurProjects>
+                element: <PrivetRoutes><OurProjects></OurProjects></PrivetRoutes>
             },
             {
                 path: '/login',
