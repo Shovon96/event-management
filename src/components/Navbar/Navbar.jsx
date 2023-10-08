@@ -54,7 +54,8 @@ const Navbar = () => {
                 {
                     user ? <>
                         <span className="text-red-500 mr-3">{user?.email}</span>
-                        <button onClick={handleLogOut} className='bg-fuchsia-600 text-white font-bold px-6 py-3 rounded-md'>Sign Out</button>
+                        <img className="h-10 w-10 mx-2 rounded-full" src={user?.photoURL} alt="" />
+                        <button onClick={handleLogOut} className='bg-fuchsia-600 text-white font-bold px-6 py-3 rounded-md'>SignOut</button>
                     </>
                         :
                         <button>
