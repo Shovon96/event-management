@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import auth from "../../firebaseConfig/firebase.config";
 import { useState } from "react";
@@ -10,6 +10,7 @@ const Register = () => {
     const [regError, setRegError] = useState('');
     const [regSuccess, setRegSuccess] = useState('')
     const [showPassword, setShowPassword] = useState(false)
+    const navigate = useNavigate()
 
     const handleSignUp = e => {
         e.preventDefault()
@@ -37,6 +38,7 @@ const Register = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(() => {
                 setRegSuccess('User Created Successfully..')
+                navigate('/')
                 toast.success("User Created Success !", {
                     position: toast.POSITION.TOP_CENTER
                   })
